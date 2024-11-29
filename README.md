@@ -3,17 +3,17 @@ The contract implements a unique token wrapping mechanism and expects tokens to 
 Key Characteristics
 ----
 
-One-to-one token mapping
-Automatic token minting upon receipt
-Restricted to a specific source token account
-Ensures precise token value preservation
+1. One-to-one token mapping
+2. Automatic token minting upon receipt
+3. Restricted to a specific source token account
+4. Ensures precise token value preservation
 
 Workflow Example
 ----
 
-1. User wants to wrap tokens
+1. User wants to lock tokens 
 2. User sends X tokens from token_id_to_lock contract to this contract
-3. Contract automatically mints X tokens of its own token
+3. Contract automatically mints X non-transferable tokens of its own token
 4. Minted tokens are credited to the original sender's account
 
 This design enables a simple, controlled token wrapping or bridging process with minimal complexity and maximum security.
